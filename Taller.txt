@@ -1,0 +1,143 @@
+MODELO ENTIDAD RELACIÓN
+
+
+
+
+
+
+ALBA JUDITH JERÓNIMO MONTIEL
+
+
+
+
+
+MSC. ALEXANDER TOSCANO
+
+
+
+
+UNIVERSIDAD DE CÓRDOBA
+FACULTAD DE EDUCACIÓN Y CIENCIAS HUMANAS
+DEPARTAMENTO DE INFORMÁTICA EDUCATIVA
+LICENCIATURA EN INFORMÁTICA Y MEDIOS AUDIOVISUALES
+BASES DE DATOS
+MONTERÍAS-CÓRDOBA 2018
+
+
+
+
+Taller
+Realizar los siguientes ejercicios: 
+1. El ministerio de la salud desea mantener un sistema de información relativo a hospitales. A continuación se detalla lo que se desea modelar:
+HOSPITAL, con los datos:
+Código, que lo identifica.
+Nombre
+Dirección
+Teléfono
+Cantidad de camas
+SALA, con los datos:
+Código
+Nombre
+Cantidad de camas
+MÉDICO, con los datos:
+Cédula de identidad
+Nombre
+Especialidad
+LABORATORIO, con los datos:
+Código, que lo identifica.
+Nombre
+Dirección
+Teléfono
+PACIENTE, con los datos:
+Cédula de identidad
+Número de registro
+Número de cama
+Nombre
+Dirección
+Fecha de nacimiento
+Sexo
+DIAGNÓSTICO, con los datos:
+Código, que lo identifica.
+Tipo
+Complicaciones
+Además se sabe que:
+* Cada hospital tiene varias salas. Cada una de ellas pertenece a un solo hospital. 
+* En distintos hospitales puede haber salas con el mismo código, pero esto no puede ocurrir dentro de un hospital.
+* Cada médico trabaja en un único hospital.
+* Cada hospital trabaja con muchos laboratorios, y un laboratorio presta servicios a más de un hospital. Interesa conocer la descripción de cada servicio y la fecha en que se realizó.
+* Un paciente puede estar internado en una única sala.
+* Cada paciente puede ser atendido por más de un médico, y a su vez cada médico atenderá varios pacientes. Interesa conocer las fechas de las atenciones.
+* Cada paciente puede tener varios diagnósticos. Interesa saber la fecha en que se realizó cada uno.
+Diseñar un Modelo Entidad Relación para la realidad planteada (MER).
+RTA/  ver imagen 1. 
+
+2. La secretaría del MERCOSUR desea diseñar un sistema de información sobre relaciones comerciales y diplomáticas entre países. Cada país se identifica por su nombre, mientras que de cada producto se conoce su nombre y una breve descripción. Se desea modelar que:
+* Un país puede tener relaciones diplomáticas con varios países, interesando saber en qué fecha se establecieron.
+* Por otro lado interesa modelar el flujo de productos de un país a otro. (por ej.: un país que exporta un producto, ¿hacia dónde lo hace?). 
+RTA/ ver imagen 2
+
+3. Se pretende modelar la cantidad de goles que hizo un jugador a lo largo de su vida en cada equipo en que jugó. Tanto de los jugadores como de los equipos se conoce su nombre. Discutir la posibilidad de representar las siguientes opciones, marcando errores y corrigiéndolos en el MER propuesto:
+* Representar los goles realizados por un jugador en cada temporada (identificada por el año)
+* Representar los goles realizados por un jugador en los distintos campeonatos que jugó en cada equipo. Cada campeonato se identifica por un código y se conoce su nombre y el año en que se jugó.
+
+
+Modelo propuesto en el ejercicio ver imagen: modelo_1
+
+RTA/ El modelo propuesto presenta falencias en la estructura, ya que faltan categorías que permitan hacer el cálculo de los goles efectuados por el jugador. A continuación se muestra el modelo propuesto. Ver imagen 3. 
+
+4. Se pretende modelar la siguiente realidad:
+Existe un conjunto de empresas que producen varios productos, también hay un conjunto de promotores que trabajan en las empresas. Cada promotor trabaja para una sola empresa y vende un único producto de esta.
+a. Dada la siguiente solución, ¿qué restricciones habría que agregar para que represente la realidad descrita?
+
+RTA/ Se debe agregar información en los atributos de la entidad empresa, en la entidad de productos y en la entidad promotora. Esto es: Empresa (Id_empresa), Productos (descripción, cantidad, precio) Para ejemplificar lo dicho, ver imagen 4.
+
+
+Modelo propuesto en el ejercicio ver imagen: modelo_2
+
+b. ¿Qué cambios deberían hacerse si todos los productos deben tener un promotor asociado?
+RTA/ Ver imagen 4
+c. Describa otras alternativas para representar la realidad planteada sin tener en cuenta la parte b. y discutiendo las posibles anomalías.
+RTA/ Ver imagen 4
+
+5. Dado un conjunto de personas se desea modelar los vínculos entre los padres biológicos y sus hijos mediante el siguiente MER:
+
+Modelo propuesto en el ejercicio ver imagen: modelo_3
+
+a. Discutir su representatividad.
+RTA/ Al modelo propuesto le faltan atributos en las categorías. Ver imagen 5
+b. Plantear un nuevo modelo que represente esta realidad.
+RTA/ Ver imagen 5
+
+
+6. Una cadena de restaurantes ha relevado información acerca de los clientes y sus preferencias. De cada persona, identificada por su cédula de identidad, se conoce su nombre, el restaurant que frecuenta más y las comidas que más le gustan. De cada restaurant, identificado por su nombre, se conoce las comidas que preparan. De cada comida se conoce su nombre, que la identifica, el tiempo de preparación y los ingredientes principales.
+
+a) Diseñar un MER que represente la realidad anterior
+RTA/ Ver imagen 6
+b) Modificar el MER anterior para representar la información anterior considerando las siguientes restricciones.
+-Un restaurante no vende más de 10 comidas.
+-Una persona frecuenta varios restaurantes.
+-A una persona no le gusta una comida por sí sola sino cómo la sirven en determinados restaurantes.
+
+RTA/ Ver imagen 6-b
+
+
+7. El siguiente MER representa la información modela un sistema de corrección de exámenes: 
+
+Modelo propuesto en el ejercicio: ver imagen: modelo_4
+
+Restricción: Corregido, Corrector y Recorrector deben ser distintos entre sí. Indique cuales de las opciones a continuación son correctas:
+
+a) Cada estudiante corrige sólo a 1 estudiante
+RTA/ Falso, un estudiante corrige a varios.
+
+b) Un estudiante puede corregirse a sí mismo
+      RTA/Verdadero, ya que tendrá una re-corrección más adelante.
+
+c) Todos los estudiantes son corregidos por alguien
+RTA/ Verdadero, el re-corrector vuelve a hacer el proceso.
+
+d) Todo estudiante corregido es re-corregido por algún estudiante
+RTA/Verdadero, es corregido. 
+
+e) La nota de corrección y la de re-corrección son diferentes
+RTA/Falso, según el modelo no, porque no presenta Id que sea diferente
