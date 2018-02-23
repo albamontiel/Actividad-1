@@ -1,0 +1,42 @@
+MODELO ENTIDAD RELACIÓN
+
+
+
+
+
+
+ALBA JUDITH JERÓNIMO MONTIEL
+
+
+
+
+
+MSC. ALEXANDER TOSCANO
+
+
+
+
+
+
+UNIVERSIDAD DE CÓRDOBA
+FACULTAD DE EDUCACIÓN Y CIENCIAS HUMANAS
+DEPARTAMENTO DE INFORMÁTICA EDUCATIVA
+LICENCIATURA EN INFORMÁTICA Y MEDIOS AUDIOVISUALES
+BASES DE DATOS
+MONTERÍAS-CÓRDOBA 2018
+
+
+Taller: 
+Realizar los siguientes ejercicios: 
+1. En la estación de guaz contamos con carros que recorren una serie de lugares y que son conducidas por varios conductores. Se quiere representar los lugares que son recorridos por cada carro, conducidas por cada conductor y la fecha en que se visita el lugar. Definir entidades con atributos, relaciones atributos claves indicando la cardinalidad.
+RTA/ver imagen número 7
+2. La consejería de educación gestiona varios tipos de centro: Públicos, concertados y privados. Los privados tiene un atributo específico que es la cuota. Los concertados tienen la agrupación y la comisión. Asigna plazas a los profesores de la comunidad para impartir clase en esos centros. Un profesor puede impartir clases en varios centros. Definir entidades con atributos, relaciones atributos claves indicando la cardinalidad.
+RTA/ver imagen número 8
+3. A un concesionario de autos llegan clientes para comprar automóviles. De cada auto interesa saber la matrícula, modelo, marca y color. Un cliente puede comprar varios autos en el concesionario. Cuando un cliente compra un auto, se le hace una ficha en el concesionario con la siguiente información: identificación, nombre, apellidos, dirección y teléfono. Los autos que el concesionario vende pueden ser nuevos o usados (de segunda mano). De los autos nuevos interesa saber el número de unidades que hay en el concesionario. De los autos viejos interesa el número de kilómetros que lleva recorridos. El concesionario también dispone de un taller en el que los mecánicos reparan los autos que llevan los clientes. Un mecánico repara varios autos a lo largo del día, y un auto puede ser reparado por varios mecánicos. Los mecánicos tienen una identificación, nombre, apellidos, fecha de contratación y salario. Se desea guardar también la fecha en la que se repara cada vehículo y el número de horas que se tardado en arreglar cada automóvil.
+RTA/ver imagen número 9
+4. Una agencia de viajes desea informatizar toda la gestión de los viajeros que acuden a la agencia y los viajes que estos realizan. Tras ponernos en contacto con la agencia, ésta nos proporciona la siguiente información. La agencia desea guardar la siguiente información de los viajeros: identificación, nombre, dirección y teléfono. De cada uno de los viajes que maneja la agencia interesa guardar el código de viaje, número de plazas, fecha en la que se realiza el viaje y otros datos. Un viajero puede realizar tantos viajes como desee con la agencia. Un viaje determinado sólo puede ser cubierto por un viajero. Cada viaje realizado tiene un destino y un lugar de origen. De cada uno de ellos se quiere almacenar el código, nombre y otros datos que puedan ser de interés. Un viaje tiene un único lugar de destino y un único lugar de origen.
+RTA/ver imagen número 10
+
+5. Una empresa desea diseñar una base de datos para almacenar en ella toda la información generada en cada uno de los proyectos que ésta realiza. De cada uno de los proyectos realizados interesa almacenar el código, descripción, cuantía del proyecto, fecha de inicio y fecha de fin. Los proyectos son realizados para clientes de los que se desea guardar el código, teléfono, domicilio y razón social. Un cliente puede realizar varios proyectos, pero un solo proyecto es realizado por un único cliente. En los proyectos participan colaboradores de los que se dispone la siguiente información: nif, nombre, domicilio, teléfono, banco y número de cuenta. Un colaborador puede participar en varios proyectos. Los proyectos son realizados por uno o más colaboradores. Los colaboradores de los proyectos reciben pagos. De los pagos realizados se quiere guardar el número de pago, concepto, cantidad y fecha de pago.
+RTA/ver imagen número 11
+
